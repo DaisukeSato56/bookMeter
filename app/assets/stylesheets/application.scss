@@ -2,3 +2,24 @@
 $primary-color: color("blue", "lighten-2") !default;
 @import 'materialize';
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.nav-content {
+  height: 150px;
+}
+
+.brand-logo {
+  margin-left: 20px;
+}
+
+.search {
+  margin: 30px 180px 0 0;
+}
+
+.nav-title {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main_card {
+  width: 2400px;
+}
