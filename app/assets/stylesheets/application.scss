@@ -20,9 +20,29 @@ $primary-color: color("blue", "lighten-2") !default;
   margin: 30px 180px 0 0;
 }
 
-.nav-title {
-  margin-top: 20px;
+.nav_title {
+  margin-top: 60px;
+  position: absolute;
+}
+
+.nav_title.user_avatar {
   margin-left: 20px;
+}
+
+.nav_title.username {
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+.nav_title.user_setting {
+  font-size: 15px;
+  margin-left: 80px;
+  margin-top: 90px;
+}
+
+.nav_title.user_avatar {
+  height: 50px;
+  width: 50px;
 }
 
 .main_card {
@@ -52,7 +72,7 @@ $primary-color: color("blue", "lighten-2") !default;
 }
 
 .left_content {
-  margin-top: 280px;
+  margin-top: 250px;
 }
 
 .icon {
