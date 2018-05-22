@@ -3,6 +3,11 @@ $primary-color: color("blue", "lighten-2") !default;
 @import 'materialize';
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
+.nav-extended {
+  position: absolute;
+  z-index: 1;
+}
+
 .nav-content {
   height: 150px;
 }
@@ -21,5 +26,35 @@ $primary-color: color("blue", "lighten-2") !default;
 }
 
 .main_card {
-  width: 2400px;
+  position:absolute;
+  z-index: 2;
+  margin-top: 150px;
+}
+
+.col.s12.m5 {
+  width: 100%;
+}
+
+.big_card {
+  height: 300px;
+}
+
+.second_card {
+  margin-top: 340px;
+  height: 400px;
+}
+
+.third_card {
+  margin-top: 340px;
+  height: 400px;
+  margin-left: 500px;
+  width: 665px;
+}
+
+.left_content {
+  margin-top: 280px;
+}
+
+.icon {
+  margin-right: 10px;
 }
