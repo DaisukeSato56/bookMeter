@@ -11,9 +11,11 @@
       <div class="row search">
         <div class="col s12">
             <div class="input-field col s12">
-              <i class="material-icons prefix">search</i>
-              <input type="text" id="autocomplete-input" class="autocomplete">
-              <label for="autocomplete-input" class="white-text">Search books</label>
+              <%= form_tag(home_search_path, method: :get) do %>
+                <i class="material-icons prefix">search</i>
+                <%= text_field_tag :keyword, :"", id: "autocomplete-input", class: "autocomplete" %>
+                <label for: "autocomplete-input" class: "white-text">Search books</label>
+              <% end %>
             </div>
         </div>
       </div>
@@ -60,7 +62,7 @@
     </div>
 
     <div class="row main_card">
-     <div class="col s5 m5 right1_card">
+     <div class="col s5 m5">
        <div class="card-panel third_card white">
          <span class="blue-grey-text text-darken-2">I am a very simple card. I am good at containing small bits of information.
          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
